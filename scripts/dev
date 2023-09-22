@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+export DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+export PROJECT_ROOT=$( dirname "${DIR}" )
+export SCRIPTS_DIRECTORY="${PROJECT_ROOT}/scripts"
+
+[[ -f ~/.bashrc ]] && source ~/.bashrc
+[[ -f ${DIR}/utils.sh ]] && source ${DIR}/utils.sh
+[[ -f ${DIR}/settings.sh ]] && source ${DIR}/settings.sh
+
+ProgName=$(basename $0)
+subcommand=$1
+
+case $subcommand in
+    localstack )
+        shift
+        source "${SCRIPTS_DIRECTORY}/localstack/main.sh"
+        ;;
+
+    lambda )
+        shift
+        source "${SCRIPTS_DIRECTORY}/lambda/main.sh"
+        ;;
+
+    * )
+        # attempting to set up all environments
+        # source ${DIR}/apps/configuration.sh
+        # source ${DIR}/apps/event-bus.sh
+        # source ${DIR}/apps/state-management.sh
+        ;;
+esac

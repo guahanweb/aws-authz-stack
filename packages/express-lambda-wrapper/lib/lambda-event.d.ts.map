@@ -1,0 +1,1 @@
+{"version":3,"file":"lambda-event.d.ts","sourceRoot":"","sources":["../src/lambda-event.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,OAAO,EAAE,MAAM,SAAS,CAAC;AAGlC,qBAAa,WAAW;IACpB,OAAO,CAAC,OAAO,CAAM;gBAET,IAAI,CAAC,EAAE,GAAG;IAItB,OAAO,CAAC,MAAM;IASd,OAAO,CAAC,OAAO;IAiDf,OAAO,CAAC,OAAO;IAwBR,KAAK,CAAC,GAAG,EAAE,OAAO;;;;;;;;;;;;;;CAuC5B"}

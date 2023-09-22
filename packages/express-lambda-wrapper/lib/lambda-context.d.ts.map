@@ -1,0 +1,1 @@
+{"version":3,"file":"lambda-context.d.ts","sourceRoot":"","sources":["../src/lambda-context.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,SAAS,CAAC;AAElC,qBAAa,aAAa;IACtB,OAAO,CAAC,OAAO,CAAC,CAAM;gBAEV,IAAI,CAAC,EAAE,GAAG;IAKf,KAAK,CAAC,GAAG,EAAE,OAAO;CAG5B"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"lambda-executor.d.ts","sourceRoot":"","sources":["../src/lambda-executor.ts"],"names":[],"mappings":"AAEA,wBAAgB,MAAM,mBAErB;AAED,qBAAa,cAAc;IAChB,OAAO,EAAE,GAAG,GAAC,IAAI,CAAC;IAClB,KAAK,EAAE,GAAG,GAAC,IAAI,CAAC;;IAOvB,KAAK,CAAC,SAAS,CAAC,EAAE,QAAQ;IAc1B,UAAU,CAAC,SAAS,CAAC,EAAE,QAAQ;IAczB,MAAM,CAAC,OAAO,EAAE,QAAQ;CAKjC"}

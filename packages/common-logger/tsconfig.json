@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "@careacademy/config-tsconfig/app.json",
+    "include": ["src"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "types": ["jest"],
+        "declaration": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "es2015"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "@careacademy/token-manager",
+    "version": "1.0.0",
+    "main": "lambda.ts",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "build": "../../scripts/dev lambda build token-manager",
+        "publish": "../../scripts/dev publish auth token-manager",
+        "populate": "ts-node ./scripts/demo-setup.ts",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@careacademy/common-dynamodb": "*",
+        "@careacademy/lambda-utils": "*",
+        "aws-sdk": "^2.1462.0"
+    },
+    "devDependencies": {
+        "@careacademy/config-tsconfig": "*",
+        "@careacademy/lambda-mocks": "*",
+        "@types/jest": "^29.5.4",
+        "@types/node": "^20.5.9",
+        "@typescript-eslint/eslint-plugin": "^6.6.0",
+        "@typescript-eslint/parser": "^6.6.0",
+        "eslint": "^8.49.0",
+        "eslint-config-careacademy": "*",
+        "jest": "^29.6.4",
+        "ts-jest": "^29.1.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.2.2"
+    }
+}

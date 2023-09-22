@@ -1,0 +1,19 @@
+{
+    "name": "@careacademy/config-tsconfig",
+    "version": "1.0.0",
+    "description": "",
+    "files": [
+        "app.json",
+        "base.json",
+        "node.json",
+        "lambda.json"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git@github.com/careacademy/api.git"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "@careacademy/common-dynamodb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "peerDependencies": {
+        "aws-sdk": "^2.1168.0"
+    },
+    "devDependencies": {
+        "@careacademy/config-tsconfig": "*",
+        "jest": "^29.7.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.2.2"
+    },
+    "scripts": {
+        "build": "tsc --project tsconfig.modules.json",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:careacademy/api.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

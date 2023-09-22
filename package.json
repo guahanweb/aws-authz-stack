@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@careacademy/api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*",
+    "lambdas/*"
+  ],
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
+  },
+  "scripts": {
+    "build:docker": "./scripts/docker.sh",
+    "clean": "npm run clean -ws && rm -rf node_modules",
+    "git-hooks-install": "git config --add core.hooksPath ./git-hooks",
+    "git-hooks-uninstall": "git config --unset-all core.hooksPath ./git-hooks",
+    "install": "npm run git-hooks-install",
+    "lint": "npm run lint -ws",
+    "pre-commit": "npm exec lint-staged",
+    "preinstall": "npx only-allow npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:careacademy/api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/careacademy/api/issues"
+  },
+  "homepage": "https://github.com/careacademy/api/#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "changesets": "^1.0.2",
+    "lint-staged": "^13.3.0",
+    "only-allow": "^1.1.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
+  }
+}

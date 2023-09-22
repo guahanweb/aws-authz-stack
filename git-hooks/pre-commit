@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Executing pre-commit checks..."
+
+npm run pre-commit
+exit $?
