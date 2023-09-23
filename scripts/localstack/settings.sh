@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export LAMBDA_CONTAINER_REGISTRY=mlupin/docker-lambda
 
 # be sure we have all the default values, in case CLI is not configured
 export AWS_ACCOUNT_ID=${AWS_ACCOUNT_ID:-000111000111}

@@ -4,6 +4,7 @@ import * as queries from "./queries";
 function cleanReturn(data: any) {
     data.access_token = data.pk;
 
+    delete data.pk;
     delete data.sk;
     delete data.pData;
     delete data.sData;

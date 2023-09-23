@@ -17,9 +17,16 @@ case $subcommand in
         [[ ! -d "${workspacepath}" ]] && fail "lambda doesn't exist: ${BOLD_WHITE}${workspacepath}${NC}"
 
         info "building lambda for ${BOLD_WHITE}${workspace}${NC}"
-        build_lambda $workspace
-        pull_dependencies $workspace
-        package_lambda $workspace
+        build_lambda $workspace > /dev/null 2>&1
+
+        info "installing dependencies for ${BOLD_WHITE}${workspace}${NC}"
+        pull_dependencies $workspace > /dev/null 2>&1
+
+        info "packaging zip artifact for ${BOLD_WHITE}${workspace}${NC}"
+        package_lambda $workspace > /dev/null 2>&1
+
+        version=$( cat ${workspacepath}/package.json | jq -r '.version' )
+        ok "package built: ${BOLD_WHITE}bundle-${version}.zip${NC}"
         ;;
 
     * )
